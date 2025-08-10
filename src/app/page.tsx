@@ -3,8 +3,8 @@ import home from "../../public/home.jpg";
 
 export default function Home() {
   return (
-    <div className="">
-      <Hero image={home} title="Home" description="Proffessional Cloud Hosting" />
-    </div>
+    <main>
+      <Hero image={home} title="Cloud Hosting" description="Fast, reliable, and scalable hosting for modern apps." />
+    </main>
   );
 }

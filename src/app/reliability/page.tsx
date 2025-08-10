@@ -1,17 +1,10 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import reliability from "../../../public/reliability.jpg";
 
-export default function ReliabilityPage() {
-    return (
-        <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-            <div className="text-4xl font-bold">Reliability page</div>
-            <Image
-                className="dark:invert"
-                src="/next.svg"
-                alt="Next.js logo"
-                width={180}
-                height={38}
-                priority
-            />
-        </div>
-    )
+export default function Reliability() {
+  return (
+    <main>
+      <Hero image={reliability} title="Reliability" description="99.99% uptime with resilient architecture." />
+    </main>
+  );
 }
